@@ -23,7 +23,7 @@ object ArtistsRemoteDataSource {
         }
     }
 
-    private const val BASE_URL = "http://10.67.14.16:8080/api"
+    private const val BASE_URL = "http://certain_ip_adress/api"
 
     suspend fun fetchAllArtists(): List<Artist> {
         return client.get("$BASE_URL/artists").body()
