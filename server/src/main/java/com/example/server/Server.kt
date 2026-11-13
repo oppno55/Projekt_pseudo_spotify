@@ -29,7 +29,7 @@ private val dataFile = File("artists_database.json")
 
 private const val API_KEY = "MojeTajneHaslo123"
 
-private fun createImageUrl(fileName: String): String = "http://10.67.14.16:8080/static/$fileName"
+private fun createImageUrl(fileName: String): String = "http://certainipadress/static/$fileName"
 private fun getInitialArtists(): List<Artist> {
     return listOf(
         Artist(id = "mac_miller", name = "Mac Miller", genre = "Hip Hop", imageUrl = createImageUrl("mac_miller.png")),
